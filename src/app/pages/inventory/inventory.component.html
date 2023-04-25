@@ -1,0 +1,13 @@
+<div class="items">
+    <div *ngFor="let item of items" class="item">
+        <p>Nume: {{item}}</p>
+        <p>Descriere: {{item}}</p>
+        <p>Cantitate: {{item.number}}/p>
+        <button>delete</button>
+        <button>edit</button>
+    </div>
+
+    <button type="button" class="button">Add New Item</button>
+</div>
+<button mat-raised-button color="accent" (click)="openDialog(0)">add</button>
+

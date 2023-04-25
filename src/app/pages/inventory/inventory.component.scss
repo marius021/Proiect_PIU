@@ -1,0 +1,32 @@
+.items{
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap:10px;
+    grid-row-gap: 10px;
+    margin:1px;
+    background-color:aqua; 
+}
+
+.item{
+    background-color: rgb(231, 223, 223);
+    width: fit-content;
+    padding: 15px;
+    margin: 20px;
+    align-items: center;
+       
+}
+
+.button{
+    position: absolute;
+    top:15%;
+    
+    background-color:#0a0a23;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 10px;
+}
+
