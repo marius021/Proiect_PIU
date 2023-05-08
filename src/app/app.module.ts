@@ -13,6 +13,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CardComponent } from './pages/card/card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { MatMenuModule } from '@angular/material/menu';
     HeaderComponent,
     HomeComponent,
     InventoryComponent,
-    FormComponent
+    FormComponent,
+    CardComponent
   ],
   imports: [
     MatFormFieldModule,
@@ -32,9 +35,12 @@ import { MatMenuModule } from '@angular/material/menu';
     HttpClientModule,
     MatButtonModule,
     MatInputModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

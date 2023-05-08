@@ -1,18 +1,21 @@
 <div class="form" [formGroup]="form">
     <mat-form-field apperance="fill">
-        <mat-label>Fill form field</mat-label>
+        <mat-label>Nume</mat-label>
         <input matInput type="text" formControlName="name" placeholder="nume">
-        <mat-incon matSuffix>sentiment_very_satisfied</mat-incon>
+        
     </mat-form-field>
     <mat-form-field apperance="fill">
-        <mat-label>Fill form field</mat-label>
+        <mat-label>Descriere</mat-label>
         <input matInput type="text" formControlName="number" placeholder="number">
-        <mat-incon matSuffix>sentiment_very_satisfied</mat-incon>
+        
     </mat-form-field>
     <mat-form-field apperance="fill">
-        <mat-label>Fill form field</mat-label>
+        <mat-label>Cantitate</mat-label>
+        <input matInput type="number" formControlName="category" placeholder="category">
+    </mat-form-field>
+    <mat-form-field apperance="fill">
+        <mat-label>Categorie</mat-label>
         <input matInput type="text" formControlName="category" placeholder="category">
-        <mat-incon matSuffix>sentiment_very_satisfied</mat-incon>
     </mat-form-field>
     <button mat-raised-button color="accent" (click)="saveNewItem()">save</button>
 </div>

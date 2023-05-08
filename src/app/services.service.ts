@@ -9,7 +9,7 @@ import { Item } from 'src/models/items';
 export class ItemService {
    
   constructor(public httpClient: HttpClient) { }
-  readonly baseUrl = 'http://localhost:44385/api/item/';
+  readonly baseUrl = 'http://localhost:8081/api/';
 
   getItems(): Observable<Item[]> {
     return this.httpClient.get<Item[]>(this.baseUrl + 'get') as Observable<Item[]>; // this.baseUrl + 'get' is the url of the api

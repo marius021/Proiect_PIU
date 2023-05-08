@@ -1,11 +1,7 @@
 .cards-container {
-    margin-top:40px ;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
-    justify-content: space-around;
-    
+    gap: 20px;
   }
   
   .card {
@@ -49,17 +45,3 @@
     cursor: pointer;
   }
   
-
- .cards-container{
-  height: 800px;
-  overflow-y:scroll;
- }
-
- ::-webkit-scrollbar {
-  display: none;
-}
-
-.add-btn{
-  margin-top:20px;
-  margin-left: 20px;
-}
