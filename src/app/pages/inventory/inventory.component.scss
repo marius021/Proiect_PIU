@@ -1,11 +1,12 @@
 .cards-container {
-    margin-top:40px ;
+    margin-top:10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
-    justify-content: space-around;
-    
+    width: 100%;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    height:80vh;
   }
   
   .card {
@@ -50,14 +51,7 @@
   }
   
 
- .cards-container{
-  height: 800px;
-  overflow-y:scroll;
- }
 
- ::-webkit-scrollbar {
-  display: none;
-}
 
 .add-btn{
   margin-top:20px;

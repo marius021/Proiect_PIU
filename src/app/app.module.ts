@@ -15,6 +15,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CardComponent } from './pages/card/card.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CardComponent } from './pages/card/card.component';
     HomeComponent,
     InventoryComponent,
     FormComponent,
-    CardComponent
+    CardComponent,
+    ContactComponent
   ],
   imports: [
     MatFormFieldModule,

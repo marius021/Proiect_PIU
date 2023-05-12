@@ -4,7 +4,7 @@
     <p class="quantity">Quantity: {{item.qty}}</p>
     <p class="category">Category: {{item.category}}</p>
     <div class="button-container">
-      <button class="update-button">Update</button>
-      <button class="delete-button">Delete</button>
+      <button class="update-button" (click)="updateItem(item)">Update</button>
+      <button class="delete-button" (click)="deleteOneItem(item.id)">Delete</button>
     </div>
   </div>

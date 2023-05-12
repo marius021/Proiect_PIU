@@ -17,7 +17,9 @@ export class InventoryComponent implements OnInit{
 
   constructor(public dialog: MatDialog, public itemService: ItemService, public itmService : ItemsFetchService) { this.itmService.getAllItems().subscribe((data)=>{console.log(Date)})}  // am mai injectat un parametru 
   ngOnInit(): void {
-    this.getItems();
+    this.itmService.getAllItems().subscribe((data)=>{this.itemList = data;},(err)=>{alert("There was an error while fetching data from back-end");})
+
+
   }
 
 
@@ -31,27 +33,6 @@ export class InventoryComponent implements OnInit{
     });
   };
   
-
-getItems() : void {
-
-
-  this.itemList = [
-        {
-            "id": 3,
-            "name": "ciocolata",
-            "description": "cu aroma de rom",
-            "qty": 150,
-            "category": "dulciuri"
-      },
-      {
-        "id": 3,
-        "name": "ciocolata",
-        "description": "cu aroma de rom",
-        "qty": 150,
-        "category": "dulciuri"
-        }
-    ]
-  }
 
 deleteItem(id: number | undefined): void {
   this.itemService.delete(id!).subscribe(

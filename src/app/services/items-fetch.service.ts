@@ -17,28 +17,34 @@ export class ItemsFetchService {
 
     const url = 'localhost:8081/api/item';
 
-    return this.http.get('localhost:8081/api/items') as Observable<item[]>;
+    return this.http.get('http://localhost:8081/api/items') as Observable<item[]>;
 
   }
 
   postItem(item:Item):Observable<item>{
-    const url = 'localhost:8081/api/item';
+    const url = 'http://localhost:8081/api/item';
     
     return this.http.post(url, item) as Observable<item>;
   
   }
 
   putItem(item:Item, id:number):Observable<item>{
-    const url = `localhost:8081/api/item${id}`;
+    const url = `http://localhost:8081/api/item/${id}`;
 
     return this.http.put(url, item) as Observable<item>;
 
   }
 
   deleteItem(id:number):Observable<item>{
-    const url = `localhost:8081/api/item${id}`;
+    const url = `http://localhost:8081/api/item/${id}`;
 
     return this.http.delete(url) as Observable<item>;
+  }
+
+  getItemById(id:number):Observable<item>{
+    const url = `http://localhost:8081/api/item/${id}`;
+
+    return this.http.get(url) as Observable<item>;
   }
 
 }

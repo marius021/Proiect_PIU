@@ -16,4 +16,8 @@ export class HeaderComponent {
   GoToInventory(){
     this.router.navigate(['inventory']);
   }
+
+  GoToContact(){
+    this.router.navigate(['contact_us']);
+  }
 }
