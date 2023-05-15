@@ -62,18 +62,18 @@ export class FormComponent implements OnInit {
   }
 
   private setEditItem(id: number): void {
-    // this.itemService.getItemById(id).subscribe((item: Item) => {
-    //   this.itemToEdit = item;
-    //   this.form.patchValue(this.itemToEdit!, {
-    //     emitEvent: false
-    //   });
-    // });
+    this.itemService.getItemById(id).subscribe((item: Item) => {
+      this.itemToEdit = item;
+      this.form.patchValue(this.itemToEdit!, {
+        emitEvent: false
+      });
+    });
   }
 
   private createForm(): void {
     this.form = this.formBuilder.group({
       name:['',Validators.required],
-      quantity: [0,Validators.required],
+      qty: [0,Validators.required],
       description:['',Validators.required],
       category: ['',Validators.required]
     });
