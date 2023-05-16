@@ -16,6 +16,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CardComponent } from './pages/card/card.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { SignupComponent } from './pages/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     InventoryComponent,
     FormComponent,
     CardComponent,
-    ContactComponent
+    ContactComponent,
+    SignupComponent
   ],
   imports: [
     MatFormFieldModule,

@@ -20,4 +20,7 @@ export class HeaderComponent {
   GoToContact(){
     this.router.navigate(['contact_us']);
   }
+  GoToSignup(){
+    this.router.navigate(['sign_up']);
+  }
 }
